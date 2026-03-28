@@ -45,7 +45,7 @@ function update() {
     label.textContent = 'Today is the 6-month mark!';
   } else {
     untilSection.classList.remove('is-past');
-    label.textContent     = 'Time to 6 months (23/07/2026)';
+    label.textContent     = '6 months is';
     daysUnit.textContent  = 'days';
     weeksUnit.textContent = 'weeks';
   }
