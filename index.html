@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Tracker — 23/01/2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+
+    <section class="block since">
+      <h2 class="label">Time since</h2>
+      <div class="stats">
+        <div class="stat">
+          <span class="value" id="daysSince">—</span>
+          <span class="unit">days</span>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+          <span class="value" id="weeksSince">—</span>
+          <span class="unit">weeks</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="reference-date">
+      <span class="date-label">Reference date</span>
+      <span class="date-value">23 / 01 / 2026</span>
+    </div>
+
+    <section class="block until">
+      <h2 class="label" id="countdownLabel">Time to 6 months (23/07/2026)</h2>
+      <div class="stats">
+        <div class="stat">
+          <span class="value" id="daysUntil">—</span>
+          <span class="unit" id="daysUntilUnit">days</span>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+          <span class="value" id="weeksUntil">—</span>
+          <span class="unit" id="weeksUntilUnit">weeks</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">Updates every minute &mdash; using your local time</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
