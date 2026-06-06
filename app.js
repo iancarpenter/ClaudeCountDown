@@ -1,5 +1,6 @@
-const REFERENCE = new Date(2026, 0, 23);   // 23 Jan 2026, local midnight
-const TARGET    = new Date(2026, 6, 23);   // 23 Jul 2026, local midnight
+const REFERENCE  = new Date(2026, 0, 23);   // 23 Jan 2026, local midnight
+const TARGET     = new Date(2026, 6, 23);   // 23 Jul 2026, local midnight
+const REFERENCE2 = new Date(2026, 1, 2);    // 02 Feb 2026, local midnight
 
 function startOfToday() {
   const d = new Date();
@@ -21,6 +22,11 @@ function update() {
 
   document.getElementById('daysSince').textContent  = sinceDays;
   document.getElementById('weeksSince').textContent = sinceWeeks;
+
+  // — since ref2 —
+  const ref2Days  = daysBetween(REFERENCE2, today);
+  const ref2Weeks = Math.floor(ref2Days / 7);
+  document.getElementById('weeksRefSince').textContent = ref2Weeks;
 
   // — until / since target —
   const diff      = daysBetween(today, TARGET);
