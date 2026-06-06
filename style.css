@@ -133,6 +133,11 @@ body {
   letter-spacing: 0.04em;
 }
 
+/* ── ref-since block ─────────────────────────────────── */
+.block.ref-since { border-top: 1px solid var(--border); }
+.ref-since .label { color: var(--accent-since); }
+.ref-since .value { color: var(--accent-since); }
+
 /* ── past-target state ───────────────────────────────── */
 .until.is-past .value { color: var(--muted); }
 .until.is-past .label { color: var(--muted); }
